@@ -1,5 +1,5 @@
 module "network" {
-    source = "/home/abdo/terrafrom/network"
+    source = "../network"
     cidr = var.cidr
     public_1_CIDR = var.public_1_CIDR
     public_2_CIDR = var.public_2_CIDR
