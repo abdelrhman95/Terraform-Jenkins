@@ -47,14 +47,14 @@ This project demonstrates using Terraform to manage infrastructure as code and d
           public_2_CIDR = var.public_2_CIDR
           private_1_CIDR = var.private_1_CIDR
           private_2_CIDR= var.private_2_CIDR
-          region = var.region}
-   ```
-
+          region = var.region
+       }
+    ```
 5. Run `terraform apply` with `-var-file` to deploy resources
    ```yaml
      terraform apply -var-file=dev.tfvars #for the "dev" environment
      terraform apply -var-file=prod.tfvars #for the "prod" environment
-     ```
+    ```
   
 6. Build Jenkins server with Terraform installed 
 12. Create pipeline to apply infrastructure based on env param
